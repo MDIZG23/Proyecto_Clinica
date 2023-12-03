@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Rutas del modulo Personas
+
+Route::get('/personas', 'PersonaController@index');
+
+Route::get('/personas/{cod_persona}', 'PersonaController@GetPersona');

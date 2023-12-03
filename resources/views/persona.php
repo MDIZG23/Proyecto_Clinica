@@ -15,10 +15,18 @@
   <table class="table table-bordered table-sm">
     <thead>
       <tr>
-        <td>Identidad</td>
-        <td>Nombre</td>
-        <td>Edad</td>
-        <td>Sexo</td>
+        <td>IDENTIDAD</td>
+        <td>PRIMERNOMBRE</td>
+        <td>SEGUNDONOMBRE</td>
+        <td>PRIMERAPELLIDO</td>
+        <td>SEGUNDOAPELLIDO</td>
+        <td>SEXPERSONA</td>
+        <td>INDCIVIL</td>
+        <td>EDADPERSONA</td>
+        <td>TELEFONO</td>
+        <td>CORREO</td>
+        <td>DIRPERSONA</td>
+        <td>FECREGISTRO</td>
       </tr>
     </thead>
     <tbody>
@@ -26,8 +34,16 @@
         <tr>
           <td class="inner-table">{{$persona["id"]}}</td>
           <td class="inner-table">{{$persona["firstname"]}}</td>
+          <td class="inner-table">{{$persona["secondname"]}}</td>
+          <td class="inner-table">{{$persona["surname"]}}</td>
+          <td class="inner-table">{{$persona["secondsurname"]}}</td>
+          <td class="inner-table">{{$persona["sexperson"]}}</td>
+          <td class="inner-table">{{$persona["civilstatus"]}}</td>
           <td class="inner-table">{{$persona["age"]}}</td>
-          <td class="inner-table">{{$persona["sex"]}}</td>
+          <td class="inner-table">{{$persona["phone"]}}</td>
+          <td class="inner-table">{{$persona["mail"]}}</td>
+          <td class="inner-table">{{$persona["address"]}}</td>
+          <td class="inner-table">{{$persona["registrationdate"]}}</td>
         </tr>
       @endforeach
     </tbody>
