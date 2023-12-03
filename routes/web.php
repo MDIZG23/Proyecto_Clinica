@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/personas', 'PersonaController@index');
 
 Route::get('/personas/{cod_persona}', 'PersonaController@GetPersona');
+
+Route::get('/productos', [ProductoController::class, 'index']);
+
+Route::post('/insertar-producto', [ProductoController::class, 'insertarProducto']);
